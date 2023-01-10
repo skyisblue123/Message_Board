@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Message Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+<meta charset="UTF-8">
+<title>Message Board</title>
+<link rel="icon" href="https://i.postimg.cc/nz569Kc1/paper-plane.png">
+<meta name="description" content="write something">
+<meta name="keywords" content="message,write">
+<meta property="og:title" content="Message Board">
+<meta property="og:description" content="Write something">
+<meta property="og:image" content="https://i.postimg.cc/x1BQzSxm/marek-piwnicki-BLf-Y1-Yl-XHr-Y-unsplash.jpg">
+<meta property="og:type" content="website">
+<meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrap" data-speed="1">
+  <div class="top">
+  <h1>Message Board</h1>
+</div>
+  
+<div class="center">
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+          <label for="comment">Comment:</label>
+          <textarea rows="10" id="comment"></textarea>
+      </form>
+   <button id="myBtn">Submit</button>
+    </div>
+  
+  <div class="bottom">
+      <table id="resultTable" class="table-striped">
+        <tbody id="resultBody"></tbody>
+      </table>
+  </div>
+  
+</div> <!--wrap尾巴-->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

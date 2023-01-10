@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.wrap {
+  margin: 0 auto;
+  padding: 50px;
+  background-image: url(https://i.postimg.cc/kgYCj50H/marek-piwnicki-BLf-Y1-Yl-XHr-Y-unsplash.jpg);
+  background-position: center top;
+  /*水平方向&垂直方向*/
+  background-size: contain;
+  /*圖片縮放，保持其縱橫比*/
+  background-repeat: no-repeat;
+  background-color: #050d13;
+  background-attachment: fixed;
+  /*固定背景*/
+}
+.wrap .top {
+  text-align: center;
+  font-size: 80px;
+}
+@media (max-width: 767px) {
+  .wrap .top {
+    color: white;
+  }
+}
+@media (max-width: 375px) {
+  .wrap .top {
+    font-size: 60px;
+    color: white;
+  }
+}
+.wrap .center {
+  margin: 30px 0;
+}
+.wrap .center form {
+  margin: 0 auto;
+  width: 90%;
+}
+.wrap .center form label {
+  font-size: 25px;
+}
+@media (max-width: 767px) {
+  .wrap .center form label {
+    color: white;
+  }
+}
+.wrap .center form #name,
+.wrap .center form #comment {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  /*背景透明，文字不透明*/
+  margin: 10px 0;
+  padding: 5px;
+}
+.wrap .center #myBtn {
+  margin: 15px 45px 0 0;
+  padding: 8px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background: white;
+  float: right;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.6);
+  /*0.6是透明度*/
+}
+@media (max-width: 767px) {
+  .wrap .center #myBtn {
+    margin: 15px 25px 0 0;
+  }
+}
+@media (max-width: 375px) {
+  .wrap .center #myBtn {
+    margin: 15px 5px 0 0;
+  }
+}
+.wrap .bottom {
+  width: 90%;
+  margin: 90px auto 0;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+.wrap .bottom table {
+  width: 100%;
+  table-layout: fixed;
+  /*平均表格寬度*/
+}
+.wrap .bottom table #resultBody .style {
+  border-bottom: 1px solid white;
+}
+.wrap .bottom table #resultBody td {
+  padding: 8px;
+  word-wrap: break-word;
+  /*依單字換行*/
+}
+
+/*wrap尾巴*/
