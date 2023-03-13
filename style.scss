@@ -1,0 +1,93 @@
+$font-l: 80px;
+$font-m: 25px;
+$font-s: 20px;
+
+.wrap {
+  margin: 0 auto;
+  padding: 50px;
+  background-image: url(https://i.postimg.cc/kgYCj50H/marek-piwnicki-BLf-Y1-Yl-XHr-Y-unsplash.jpg);
+  background-position: center top; /*水平方向&垂直方向*/
+  background-size: contain; /*圖片縮放，保持其縱橫比*/
+  background-repeat: no-repeat;
+  background-color: #050d13;
+  background-attachment: fixed; /*固定背景*/
+  .top {
+    text-align: center;
+    font-size: $font-l;
+  }
+  @media (max-width: 767px) {
+    .top {
+      color: white;
+    }
+  }
+  @media (max-width: 375px) {
+    .top {
+      font-size: 60px;
+    }
+  }
+  .center {
+    margin: 30px 0;
+    form {
+      margin: 0 auto;
+      width: 90%;
+      label {
+        font-size: $font-m;
+      }
+      @media (max-width: 767px) {
+        label {
+          color: white;
+        }
+      }
+      #name,
+      #comment {
+        font-size: $font-s;
+        width: 100%;
+        border: none;
+        background: rgba(255, 255, 255, 0.2); /*背景透明，文字不透明*/
+        margin: 10px 0;
+        padding: 5px;
+      }
+    }
+    #myBtn {
+      margin: 15px 45px 0 0;
+      padding: 8px;
+      border: none;
+      font-size: $font-s;
+      color: white;
+      background: white;
+      float: right;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.6); /*0.6是透明度*/
+    }
+    @media (max-width: 767px) {
+      #myBtn {
+        margin: 15px 25px 0 0;
+      }
+    }
+    @media (max-width: 375px) {
+      #myBtn {
+        margin: 15px 5px 0 0;
+      }
+    }
+  }
+  .bottom {
+    width: 90%;
+    margin: 90px auto 0;
+    padding: 10px;
+    color: white;
+    font-size: $font-s;
+    table {
+      width: 100%;
+      table-layout: fixed; /*平均表格寬度*/
+      #resultBody {
+        .style {
+          border-bottom: 1px solid white;
+        }
+        td {
+          padding: 8px;
+          word-wrap: break-word; /*依單字換行*/
+        }
+      }
+    }
+  }
+} /*wrap尾巴*/
